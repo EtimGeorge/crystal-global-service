@@ -345,11 +345,13 @@ main {
   margin: 4rem auto;
   padding: 0 1rem;
   display: flex;
+  flex-direction: column;
   gap: 2rem;
   perspective: 1000px;
 }
 
 .address-card {
+  display: flex;
   flex: 1;
   transform-style: preserve-3d;
   transition: transform 0.5s ease;
@@ -360,7 +362,7 @@ main {
   transform: rotateY(5deg);
 }
 
-.address-card h3 {
+.address-header h3 {
   color: var(--primary-color);
   margin-bottom: 1.5rem;
   text-align: center;
@@ -1183,4 +1185,5 @@ main {
    height: 430px;
 }
   .footer-content { flex-direction: column; }
+}
 }
