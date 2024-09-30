@@ -4,89 +4,234 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services - Saencrystal Global Services</title>
+
+    <link rel="stylesheet" href="../css_files/services-styles.css">
+
     <link rel="stylesheet" href="/css_files/styles.css">
+
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="logo.png" alt="Saencrystal Global Services Logo" id="logo">
+                <img src="../assets/images/SAENCRYSTAL_GLOBAL__1_-removebg-preview.png" alt="Saencrystal Global Services Logo">
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="training.html">Training</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../index.html" class="nav-item">Home</a></li>
+                <li><a href="/html_files/about.html" class="nav-item">About</a></li>
+                <li><a href="/html_files/services.html" class="nav-item">Services</a></li>
+                <li><a href="/html_files/training.html" class="nav-item">Training</a></li>
+                <li><a href="/html_files/contact.html" class="nav-item">Contact</a></li>
+                <li><a href="/html_files/blog.html" class="nav-item">Blog</a></li>
             </ul>
             <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
         </nav>
     </header>
-
     <main>
         <section class="banner">
-            <h1>Our Services</h1>
+            <h1 class="services-title">Our Services</h1>
+              <p class="services-subtitle">Comprehensive solutions for your business needs</p>
         </section>
 
-        <section class="services-content">
-            <div class="service">
-                <h2>Business Development</h2>
-                <p>Strategic planning and execution to drive growth and expansion for your business.</p>
-                <ul>
+        <section class="services-section">
+            <div class="services-container">
+              
+              
+              <div class="services-grid">
+                <div class="service-card" data-service="business-development">
+                  <i class="fas fa-chart-line"></i>
+                  <h3>Business Development</h3>
+                  <p>Strategic planning and execution to drive growth and expansion for your business.</p>
+                  <ul class="service-details">
                     <li>Market analysis and research</li>
                     <li>Growth strategy formulation</li>
                     <li>Partnership and alliance development</li>
                     <li>New market entry planning</li>
-                </ul>
-            </div>
-
-            <div class="service">
-                <h2>Merchandise Sales</h2>
-                <p>Optimize your product offerings and sales strategies to maximize revenue.</p>
-                <ul>
+                  </ul>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                
+                <div class="service-card" data-service="merchandise-sales">
+                  <i class="fas fa-shopping-cart"></i>
+                  <h3>Merchandise Sales</h3>
+                  <p>Optimize your product offerings and sales strategies to maximize revenue.</p>
+                  <ul class="service-details">
                     <li>Product portfolio management</li>
                     <li>Sales forecasting and planning</li>
                     <li>Pricing strategy optimization</li>
                     <li>Visual merchandising consultation</li>
-                </ul>
-            </div>
-
-            <div class="service">
-                <h2>Store Management</h2>
-                <h3>At Saencrystal Global Services, we take the hassle out of running your store with our expert Store Management as a Service. Our team of professionals ensures smooth operations, inventory control, and customer satisfaction, allowing you to focus on growing your business. Whether you're managing a small boutique or a large retail outlet, we provide customized solutions that optimize efficiency and boost profitability. Let us handle the details while you enjoy peace of mind, knowing your store is in capable hands. Elevate your business with Saencrystal's top-tier store management services today!</h3>
-                <p>Improve your store's customer experience and operational efficiency.</p>
-                <ul>
-                    <li>Customer relationship management</li>
-                    <li>Product inventory management</li>
-                    <li>Supplier management</li>
-                    <li>Order fulfillment and shipping</li>
-                </ul
-                <p>Comprehensive solutions to streamline and improve your retail operations.</p>
-                <ul>
+                  </ul>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                
+                <div class="service-card" data-service="store-management">
+                  <i class="fas fa-store"></i>
+                  <h3>Store Management</h3>
+                  <p>Comprehensive solutions to streamline and improve your retail operations.</p>
+                  <ul class="service-details">
                     <li>Inventory management systems</li>
                     <li>Staff training and development</li>
                     <li>Customer experience enhancement</li>
                     <li>Operational efficiency analysis</li>
-                </ul>
-            </div>
-
-            <div class="service">
-                <h2>Training Programs</h2>
-                <p>Empower your team with our diverse range of skill-building programs.</p>
-                <ul>
+                  </ul>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+                
+                <div class="service-card" data-service="training-programs">
+                  <i class="fas fa-graduation-cap"></i>
+                  <h3>Training Programs</h3>
+                  <p>Empower your team with our diverse range of skill-building programs.</p>
+                  <ul class="service-details">
                     <li>Customized training curricula</li>
                     <li>On-site and virtual training options</li>
                     <li>Continuous learning support</li>
                     <li>Performance tracking and evaluation</li>
-                </ul>
+                  </ul>
+                  <button class="learn-more-btn">Learn More</button>
+                </div>
+              </div>
             </div>
-        </section>
+            
+            <div class="service-modal">
+              <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+                <h4>Benefits:</h4>
+                <ul id="modal-benefits"></ul>
+                <h4>Why Choose Us:</h4>
+                <p id="modal-why-us"></p>
+              </div>
+            </div>
+          </section>
+
+          <!-- =========== other services =========== -->
+
+          <section class="services-section">
+            <div class="services-container">
+              <h2 class="services-title">Our Services</h2>
+              <p class="services-subtitle">Comprehensive solutions for your business needs</p>
+              
+              <div class="services-grid">
+                <div class="service-card" data-service="iso-training">
+                  <i class="fas fa-certificate"></i>
+                  <h3>ISO Management Systems Training</h3>
+                  <p>Comprehensive training on ISO standards and implementation.</p>
+                  <a href="./iso-training.html" class="learn-more-btn">Learn More</a>
+                </div>
+                
+                <div class="service-card" data-service="business-case">
+                  <i class="fas fa-briefcase"></i>
+                  <h3>Business Case Development</h3>
+                  <p>Expert guidance in creating compelling business cases for your projects.</p>
+                  <a href="./business-case.html" class="learn-more-btn">Learn More</a>
+                </div>
+                
+                <div class="service-card" data-service="brief-writing">
+                  <i class="fas fa-pen-fancy"></i>
+                  <h3>Brief Writing</h3>
+                  <p>Professional brief writing services for various business needs.</p>
+                  <a href="brief-writing.html" class="learn-more-btn">Learn More</a>
+                </div>
+                
+                <div class="service-card" data-service="website-previews">
+                  <i class="fas fa-laptop-code"></i>
+                  <h3>Website Previews</h3>
+                  <p>Create stunning website previews to showcase your digital presence.</p>
+                  <a href="website-previews.html" class="learn-more-btn">Learn More</a>
+                </div>
+                
+                <div class="service-card" data-service="social-media">
+                  <i class="fas fa-share-alt"></i>
+                  <h3>Social Media Management</h3>
+                  <p>Comprehensive social media strategies and management services.</p>
+                  <a href="social-media.html" class="learn-more-btn">Learn More</a>
+                </div>
+                
+                <div class="service-card" data-service="seo-optimization">
+                  <i class="fas fa-search"></i>
+                  <h3>SEO Optimization</h3>
+                  <p>Boost your online visibility with our expert SEO services.</p>
+                  <a href="seo-optimization.html" class="learn-more-btn">Learn More</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="cta-section">
+              <h3>Ready to elevate your business?</h3>
+              <a href="contact.html" class="cta-button">Request a Quote</a>
+            </div>
+            
+            <div class="testimonials-section">
+              <h3>What Our Clients Say</h3>
+              <div class="testimonial-carousel">
+                <!-- Add testimonials here -->
+
+                <!-- Testimonial 1 -->
+                <div class="testimonial">
+                  <div class="testimonial-logo">
+                    <img src="path/to/retailtech-logo.png" alt="RetailTech Logo">
+                  </div>
+                  <p class="testimonial-content">"Saencrystal Global Services transformed our business operations. Their expertise in business development and store management was invaluable."</p>
+                  <p class="testimonial-author">- John Doe, CEO of RetailTech</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial">
+                  <div class="testimonial-logo">
+                    <img src="path/to/globalmart-logo.png" alt="GlobalMart Logo">
+                  </div>
+                  <p class="testimonial-content">"The training programs provided by Saencrystal were top-notch. Our team's productivity has significantly improved."</p>
+                  <p class="testimonial-author">- Jane Smith, HR Director at GlobalMart</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial">
+                  <div class="testimonial-logo">
+                    <img src="path/to/fashionforward-logo.png" alt="FashionForward Logo">
+                  </div>
+                  <p class="testimonial-content">"Their merchandise sales strategies helped us increase our revenue by 30% in just six months. Highly recommended!"</p>
+                  <p class="testimonial-author">- Mike Johnson, Sales Manager at FashionForward</p>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="testimonial">
+                  <div class="testimonial-logo">
+                    <img src="path/to/techsolutions-logo.png" alt="TechSolutions Logo">
+                  </div>
+                  <p class="testimonial-content">"Saencrystal's business development strategies helped us identify new market opportunities and expand our client base. Their insights were game-changing for our tech startup."</p>
+                  <p class="testimonial-author">- Sarah Lee, Founder of TechSolutions</p>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="testimonial">
+                  <div class="testimonial-logo">
+                    <img src="path/to/ecoretail-logo.png" alt="EcoRetail Logo">
+                  </div>
+                  <p class="testimonial-content">"The store management solutions provided by Saencrystal Global Services streamlined our operations and significantly improved our customer experience. We've seen a 25% increase in repeat customers."</p>
+                  <p class="testimonial-author">- Alex Green, Operations Manager at EcoRetail</p>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="testimonial">
+                  <div class="testimonial-logo">
+                    <img src="path/to/globalbrands-logo.png" alt="Global Brands Logo">
+                  </div>
+                  <p class="testimonial-content">"Saencrystal's merchandise sales expertise helped us optimize our product mix and pricing strategy. We've seen a 40% boost in sales within the first quarter of implementation."</p>
+                  <p class="testimonial-author">- Emily Chen, Chief Marketing Officer at Global Brands</p>
+                </div>
+
+              </div>
+            </div>
+          </section>  
     </main>
 
     <footer>
@@ -123,6 +268,10 @@
         </div>
     </footer>
 
-    <script src="/javascript_files/script.js"></script>
+    <script src="../javascript_files/script.js"></script>
+
+    <script src="../javascript_files/services-script.js"></script>
+
+    <script src="../javascript_files/active.js"></script>
 </body>
 </html>
