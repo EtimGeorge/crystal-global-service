@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article - Saencrystal Global Services</title>
+    <link rel="stylesheet" href="../css_files/blog.css">
+
+    <link rel="stylesheet" href="../css_files/article.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/assets/images/SAENCRYSTAL_GLOBAL__1_-removebg-preview.png" alt="Saencrystal Global Services Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="article-content">
+            <h1 id="articleTitle">Loading article...</h1>
+            <div id="articleContent">Please wait while the article loads.</div>
+            
+            <div class="rating">
+                <span class="star" data-rating="1">★</span>
+                <span class="star" data-rating="2">★</span>
+                <span class="star" data-rating="3">★</span>
+                <span class="star" data-rating="4">★</span>
+                <span class="star" data-rating="5">★</span>
+            </div>
+            
+            <button id="likeButton">Like</button>
+            <span id="likeCount">0 likes</span>
+
+            <div class="comments-section">
+                <h2>Comments</h2>
+                <div id="commentsContainer"></div>
+                <form id="commentForm">
+                    <textarea id="commentText" placeholder="Write your comment here" required></textarea>
+                    <input type="text" id="commentName" placeholder="Your Name" required>
+                    <button type="submit">Submit Comment</button>
+                </form>
+            </div>
+        </article>
+    </main>
+
+    <script src="../javascript_files/article.js"></script>
+    <script>
+        // Function to get URL parameters
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Function to load article content
+        function loadArticle() {
+            const slug = getUrlParameter('slug');
+            const article = getArticle(slug);
+            if (article) {
+                document.getElementById('articleTitle').textContent = article.title;
+                document.getElementById('articleContent').innerHTML = article.content;
+            } else {
+                document.getElementById('articleTitle').textContent = 'Article Not Found';
+                document.getElementById('articleContent').textContent = 'Sorry, the requested article could not be found.';
+            }
+        }
+
+        // Handle star rating
+        const stars = document.querySelectorAll('.star');
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                const rating = star.getAttribute('data-rating');
+                stars.forEach(s => {
+                    s.classList.toggle('active', s.getAttribute('data-rating') <= rating);
+                });
+                // Here you would typically send this rating to your server
+                console.log(`Article rated: ${rating} stars`);
+            });
+        });
+
+        // Handle likes
+        let likes = 0;
+        const likeButton = document.getElementById('likeButton');
+        const likeCount = document.getElementById('likeCount');
+        likeButton.addEventListener('click', () => {
+            likes++;
+            likeCount.textContent = `${likes} like${likes !== 1 ? 's' : ''}`;
+            // Here you would typically send this like to your server
+            console.log('Article liked');
+        });
+
+        // Handle comments
+        const commentForm = document.getElementById('commentForm');
+        const commentsContainer = document.getElementById('commentsContainer');
+        commentForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const commentText = document.getElementById('commentText').value;
+            const commentName = document.getElementById('commentName').value;
+            const commentElement = document.createElement('div');
+            commentElement.classList.add('comment');
+            commentElement.innerHTML = `
+                <strong>${commentName}</strong>
+                <p>${commentText}</p>
+            `;
+            commentsContainer.appendChild(commentElement);
+            commentForm.reset();
+            // Here you would typically send this comment to your server
+            console.log('Comment submitted:', { name: commentName, text: commentText });
+        });
+
+        // Load the article when the page loads
+        window.addEventListener('DOMContentLoaded', loadArticle);
+    </script>
+</body>
+</html>

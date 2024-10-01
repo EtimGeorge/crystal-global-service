@@ -47,6 +47,8 @@
 
     <link rel="stylesheet" href="../css_files/blog.css">
 
+    <link rel="stylesheet" href="../css_files/styles.css">
+
     <!-- ======= favicon ========= -->
 
     <link rel="icon" href="../assets/images/SAENCRYSTAL_GLOBAL__1_-removebg-preview.png" type="image/x-icon">
@@ -56,19 +58,26 @@
     
 </head>
 <body>
-    <header>
+     <!-- Header -->
+
+     <header>
         <nav>
             <div class="logo">
-                <img src="/assets/images/SAENCRYSTAL_GLOBAL__1_-removebg-preview.png" alt="Saencrystal Global Services Logo">
+                <img src="../assets/images/SAENCRYSTAL_GLOBAL__1_-removebg-preview.png" alt="Saencrystal Global Services Logo">
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="training.html">Training</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="./html_files/about.html" class="nav-item">About</a></li>
+                <li><a href="./html_files/services.html" class="nav-item">Services</a></li>
+                <li><a href="./html_files/training.html" class="nav-item">Training</a></li>
+                <li><a href="./html_files/contact.html" class="nav-item">Contact</a></li>
+                <li><a href="./html_files/blog.html" class="nav-item">Blog</a></li>
             </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
 
@@ -79,7 +88,7 @@
                 <div class="blog-content">
                     <h2>5 Effective Business Development Strategies</h2>
                     <p>Discover key strategies to grow your business in today's competitive market.</p>
-                    <a href="#" class="read-more">Read More</a>
+                    <a href="./article.html?slug=5-effective-business-development-strategies" class="read-more">Read More</a>
                 </div>
             </article>
             <article class="blog-card">
@@ -87,7 +96,7 @@
                 <div class="blog-content">
                     <h2>Boosting Your Merchandise Sales</h2>
                     <p>Learn innovative techniques to increase your merchandise sales and revenue.</p>
-                    <a href="#" class="read-more">Read More</a>
+                    <a href="./article.html?slug=boosting-your-merchandise-sales" class="read-more">Read More</a>
                 </div>
             </article>
             <article class="blog-card">
@@ -95,7 +104,7 @@
                 <div class="blog-content">
                     <h2>Store Management Best Practices</h2>
                     <p>Explore the best practices in store management to optimize your operations.</p>
-                    <a href="#" class="read-more">Read More</a>
+                    <a href="./article.html?slug=store-management-best-practices" class="read-more">Read More</a>
                 </div>
             </article>
             <article class="blog-card">
@@ -103,7 +112,7 @@
                 <div class="blog-content">
                     <h2>Designing Effective Employee Training Programs</h2>
                     <p>Tips for creating training programs that empower and motivate your team.</p>
-                    <a href="#" class="read-more">Read More</a>
+                    <a href="article.html?slug=designing-effective-employee-training-programs" class="read-more">Read More</a>
                 </div>
             </article>
             <article class="blog-card">
@@ -111,7 +120,23 @@
                 <div class="blog-content">
                     <h2>Achieving Customer Service Excellence</h2>
                     <p>Strategies to enhance your customer service and build lasting relationships.</p>
-                    <a href="#" class="read-more">Read More</a>
+                    <a href="article.html?slug=achieving-customer-service-excellence" class="read-more">Read More</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <img src="/api/placeholder/600/400" alt="Effective Leadership Strategies">
+                <div class="blog-content">
+                    <h2>Effective Leadership Strategies for Business Growth</h2>
+                    <p>Discover the key leadership strategies to drive business growth and success.</p>
+                    <a href="article.html?slug=effective-leadership-strategies-for-business-growth" class="read-more">Read More</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <img src="/api/placeholder/600/400" alt="Digital Marketing Trends">
+                <div class="blog-content">
+                    <h2>Staying Ahead of Digital Marketing Trends</h2>
+                    <p>Explore the latest digital marketing trends to boost your online presence.</p>
+                    <a href="article.html?slug=staying-ahead-of-digital-marketing-trends" class="read-more">Read More</a>
                 </div>
             </article>
             <article class="blog-card">
@@ -124,6 +149,10 @@
             </article>
         </section>
     </main>
+
+    <script src="../javascript_files/active.js"></script>
+
+    <script src="../javascript_files/services-script.js"></script>
 
     <script src="../javascript_files/blog.js"></script>
 </body>

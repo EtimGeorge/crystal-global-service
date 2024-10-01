@@ -1,4 +1,13 @@
 /* About page specific styles */
+:root {
+    --primary-color: #52E3F5;
+    --secondary-color: #2FE7C4;
+    --accent-color: #AD194A;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --header-color:#52e2f596;
+    --nav-hover-color: #FF6B6B;
+  }
 
 /* Banner Section */
 .banner {
@@ -8,12 +17,12 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: var(--accent-color);
     overflow: hidden;
 }
 
 .parallax-bg {
-    background-image: url('/assets/about-banner.jpg');
+    background-image: url('../assets/team_and_trainin_12.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -28,9 +37,9 @@
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    text-shadow: 0.05em 0 0 rgba(255,0,0,0.75),
-                -0.025em -0.05em 0 rgba(0,255,0,0.75),
-                0.025em 0.05em 0 rgba(0,0,255,0.75);
+    text-shadow: 0.05em 0 0 var(--primary-color),
+                -0.025em -0.05em 0 var(--secondary-color),
+                0.025em 0.05em 0 var(--nav-hover-color);
     animation: glitch 500ms infinite;
 }
 
@@ -51,7 +60,7 @@
     animation: glitch-anim 5s infinite linear alternate-reverse;
 }
 
-.glitch::after {
+/* .glitch::after {
     left: -2px;
     text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
     animation: glitch-anim2 1s infinite linear alternate-reverse;
@@ -93,7 +102,7 @@
                     -0.025em -0.025em 0 rgba(0,255,0,0.75),
                     -0.025em -0.05em 0 rgba(0,0,255,0.75);
     }
-}
+} */
 
 .typewriter {
     overflow: hidden;
@@ -121,8 +130,15 @@
 
 .story-content {
     display: flex;
+    flex-direction: rows;
     align-items: center;
     gap: 2rem;
+    padding: 0 2rem 0 2rem;
+}
+
+.section-title{
+    padding: 0 2rem 0 2rem;
+    color: var(--accent-color);
 }
 
 .story-text {
@@ -134,9 +150,10 @@
 }
 
 .tilt-image {
-    width: 100%;
+    width: 100vh;
+    height:70vh;
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 0 10px rgba(0,0,0,0.19), 0 0 6px rgba(0,0,0,0.23);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
@@ -153,12 +170,14 @@
 .mission-vision .container {
     display: flex;
     gap: 2rem;
+    
 }
 
 .mission, .vision {
     flex: 1;
     background-color: white;
     padding: 2rem;
+    margin: 0 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -178,11 +197,13 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
+    margin: 0 2rem;
 }
 
 .value-card {
     background-color: white;
     padding: 2rem;
+    
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-align: center;
@@ -216,12 +237,14 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
+    margin: 0 2rem;
 }
 
 .team-member {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
+   
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -234,11 +257,17 @@
 .member-image {
     position: relative;
     overflow: hidden;
+    
+    /* background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+*/
 }
+    
 
 .member-image img {
     width: 100%;
-    height: 300px;
+    /* height: 500px; */
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -311,9 +340,9 @@
 .cta {
     padding: 5rem 0;
     text-align: center;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/cta-bg.jpg');
+    /* background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/Our_Team_in_Action_1.jpeg');
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     color: white;
 }
 
@@ -334,6 +363,58 @@
     background-color: var(--secondary-color);
     transform: translateY(-5px);
 }
+
+/* news letter styling */
+.community {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    z-index: 1;
+  }
+  
+  .community::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/assets/team_and_trainin_7.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4; /* Adjust this value to control the opacity */
+    z-index: -1;
+  }
+  
+  .community > * {
+    z-index: 2;
+  }
+  
+  .community h3{
+    color: var(--accent-color);
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .community p{
+    width: 40rem ;
+    margin: 0 auto;
+    font-size: 18px;
+    color:var(--) ;
+    display: flex;
+    font-weight: 600;
+    
+  }
+  
 
 /* Responsive design */
 @media (max-width: 768px) {
