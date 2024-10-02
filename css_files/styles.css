@@ -250,6 +250,8 @@ main {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
+
 /* news letter styling */
 .community {
   position: relative;
@@ -266,6 +268,18 @@ main {
   padding: 0 1rem;
   z-index: 1;
 }
+
+#newsletter-form button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#newsletter-form button:hover { background-color: #8E1640; }
 
 .community::before {
   content: "";
@@ -301,6 +315,8 @@ main {
   
 }
 
+/* =====projects showcase styling===== */
+
 .service-card h3, .project-item h3 {
   color: var(--accent-color);
   margin-bottom: 1rem;
@@ -313,6 +329,8 @@ main {
   border-radius: 5px;
   margin-bottom: 1rem;
 }
+
+/* =====cta section styling===== */
 
 .cta {
   background-color: var(--accent-color);
@@ -338,7 +356,8 @@ main {
   transform: translateY(-2px);
 }
 
-/* Location and Map Section */
+/* =====location and map section===== */
+
 .location-map {
   max-width: 1200px;
   margin: 4rem auto;
@@ -367,6 +386,40 @@ main {
   text-align: center;
   transform: translateZ(20px);
 }
+.address-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--primary-color);
+  gap: 8rem;
+}
+
+/* .address-text::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  border-: 1px solid var(--primary-color);
+  bottom: 0;
+  left: 0;
+} */
+.line{
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 70%;
+  background-color: var(--primary-color);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
 
 .address {
   margin-bottom: 2rem;
@@ -438,6 +491,46 @@ main {
     width: 100%;
   }
 }
+
+/* =====partners section===== */
+
+.partners {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.partners-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.partner-logo {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.partner-logo h4 {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+
+/* =====footer section===== */
 
 footer{
   position: relative;
@@ -515,17 +608,6 @@ footer > * {
   padding: 0.5rem;
 }
 
-#newsletter-form button {
-  background-color: var(--accent-color);
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0 3px 3px 0;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#newsletter-form button:hover { background-color: #8E1640; }
 
 .social-links a {
   color: var(--text-color);
@@ -559,6 +641,8 @@ footer > * {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* =====responsive design===== */
 
 @media (max-width: 768px) {
 
@@ -646,7 +730,10 @@ main {
 .location-map h2 {
   text-align: center;
   margin-bottom: 2rem;
-:root {
+}
+
+
+/* :root {
   --primary-color: #52E3F5;
   --secondary-color: #2FE7C4;
   --accent-color: #AD194A;
@@ -667,7 +754,7 @@ body {
 
 header {
   background-color: var(--header-color);
-  /* padding: 1rem 0; */
+  
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -731,10 +818,10 @@ nav {
 
 .nav-links a.active {
   font-weight: bold;
-}
+} */
 
 /* Glowing effect for active and hover states */
-.nav-links a:hover,
+/* .nav-links a:hover,
 .nav-links a.active {
   text-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
 }
@@ -898,9 +985,9 @@ main {
 .service-card:hover, .project-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
+} */
 /* news letter styling */
-.community {
+/* .community {
   position: relative;
   background-size: cover;
   background-position: center;
@@ -914,9 +1001,9 @@ main {
   margin: 0 auto;
   padding: 0 1rem;
   z-index: 1;
-}
+} */
 
-.community::before {
+/* .community::before {
   content: "";
   position: absolute;
   top: 0;
@@ -926,7 +1013,7 @@ main {
   background-image: url(/assets/team_and_trainin_7.jpeg);
   background-size: cover;
   background-position: center;
-  opacity: 0.4; /* Adjust this value to control the opacity */
+  opacity: 0.4; 
   z-index: -1;
 }
 
@@ -1003,9 +1090,9 @@ footer{
   margin: 0 auto;
   padding: 0 1rem;
   z-index: 1;
-}
+} */
 
-footer::before {
+/* footer::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1015,11 +1102,9 @@ footer::before {
   background-image: url(/assets/images/orsrc31263.jpg);
   background-size: cover;
   background-position: center;
-  opacity: 0.4; /* Adjust this value to control the opacity */
+  opacity: 0.4;
   z-index: -1;
-  /* background-color: var(--primary-color);
-  color: var(--text-color);
-  padding: 2rem 0 1rem; */
+  
 }
 
 footer > * {
@@ -1185,4 +1270,4 @@ main {
 }
   .footer-content { flex-direction: column; }
 }
-}
+} */
