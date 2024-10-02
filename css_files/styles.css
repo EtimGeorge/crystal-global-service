@@ -543,6 +543,7 @@ footer{
   margin: 0 auto;
   padding: 0 1rem;
   z-index: 1;
+  margin-top: 2rem;
 }
 
 footer::before {
@@ -923,4 +924,5 @@ main {
     width: 130px;
     height: 130px;
   }
+}
 }

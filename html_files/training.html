@@ -46,6 +46,8 @@
     <!-- ========style sheets=========== -->
     <link rel="stylesheet" href="../css_files/styles.css">
 
+    <link rel="stylesheet" href="../css_files/training.css">
+
     <!-- =======favicon=========== -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -86,84 +88,128 @@
     </header>
 
     <main>
-        <section class="banner">
-            <h1>Training Programs</h1>
-        </section>
+       
+    <div role="main">
+    <section class="banner">
+      <h1>Training Programs</h1>
+    </section>
 
-        <section class="training-content animate-on-scroll">
-            <div class="training-program">
-                <h2>Sales Mastery</h2>
-                <p>Master the art of selling and close more deals.</p>
-                <p><strong>Duration:</strong> 4 weeks</p>
-                <p><strong>Price:</strong> ₦150,000</p>
-                <p><strong>Schedule:</strong> Mondays and Wednesdays, 6-8 PM</p>
-            </div>
+    <section class="training-content animate-on-scroll">
+      <div class="search-container">
+        <input type="text" id="program-search" placeholder="Search for a program...">
+      </div>
 
-            <div class="training-program">
-                <h2>Digital Marketing Essentials</h2>
-                <p>Learn to create and execute effective digital marketing campaigns.</p>
-                <p><strong>Duration:</strong> 6 weeks</p>
-                <p><strong>Price:</strong> ₦200,000</p>
-                <p><strong>Schedule:</strong> Tuesdays and Thursdays, 7-9 PM</p>
-            </div>
+      <div id="program-list">
+        <div id="sales-mastery" class="training-program">
+          <h2>Sales Mastery</h2>
+          <p>Master the art of selling and close more deals.</p>
+          <div class="training-details">
+            <span class="training-detail">Duration: 4 weeks</span>
+            <span class="training-detail">Price: ₦150,000</span>
+            <span class="training-detail">Schedule: Mondays and Wednesdays, 6-8 PM</span>
+          </div>
+          <button class="enroll-btn">Enroll Now</button>
+        </div>
 
-            <div class="training-program">
-                <h2>IT Fundamentals</h2>
-                <p>Build a strong foundation in information technology.</p>
-                <p><strong>Duration:</strong> 8 weeks</p>
-                <p><strong>Price:</strong> ₦250,000</p>
-                <p><strong>Schedule:</strong> Saturdays, 10 AM - 2 PM</p>
-            </div>
+        <div id="digital-marketing" class="training-program">
+          <h2>Digital Marketing Essentials</h2>
+          <p>Learn to create and execute effective digital marketing campaigns.</p>
+          <div class="training-details">
+            <span class="training-detail">Duration: 6 weeks</span>
+            <span class="training-detail">Price: ₦200,000</span>
+            <span class="training-detail">Schedule: Tuesdays and Thursdays, 7-9 PM</span>
+          </div>
+          <button class="enroll-btn">Enroll Now</button>
+        </div>
 
-            <div class="training-program">
-                <h2>Customer Service Excellence</h2>
-                <p>Elevate your customer service skills to delight clients.</p>
-                <p><strong>Duration:</strong> 3 weeks</p>
-                <p><strong>Price:</strong> ₦100,000</p>
-                <p><strong>Schedule:</strong> Fridays, 6-9 PM</p>
+        <div id="it-fundermentals" class="training-program">
+            <h2>IT Fundamentals</h2>
+            <p>Build a strong foundation in information technology.</p>
+            <div class="training-details">
+              <span class="training-detail">Duration: 8 weeks</span>
+              <span class="training-detail">Price: ₦250,000</span>
+              <span class="training-detail">Schedule: Saturdays, 10 AM - 2 PM</span>
             </div>
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
 
-            <div class="training-program">
-                <h2>Merchandising Strategies</h2>
-                <p>Learn to create compelling product displays and boost sales.</p>
-                <p><strong>Duration:</strong> 4 weeks</p>
-                <p><strong>Price:</strong> ₦150,000</p>
-                <p><strong>Schedule:</strong> Mondays and Wednesdays, 7-9 PM</p>
+          <div id="Customer-Service" class="training-program">
+            <h2>Customer Service Excellence</h2>
+            <p>Elevate your customer service skills to delight clients.</p>
+            <div class="training-details">
+              <span class="training-detail">Duration: 3 weeks</span>
+              <span class="training-detail">Price: ₦100,000</span>
+              <span class="training-detail">Schedule: Fridays, 6-9 PM</span>
             </div>
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
 
-            <div class="training-program">
-                <h2>Store Development and Design</h2>
-                <p>Master the principles of effective store layout and design.</p>
-                <p><strong>Duration:</strong> 5 weeks</p>
-                <p><strong>Price:</strong> ₦180,000</p>
-                <p><strong>Schedule:</strong> Tuesdays and Thursdays, 6-8 PM</p>
+          <div id="Merchandising-Strategies" class="training-program">
+            <h2>Merchandising Strategies</h2>
+            <p>Learn to create compelling product displays and boost sales.</p>
+            <div class="training-details">
+              <span class="training-detail">Duration: 4 weeks</span>
+              <span class="training-detail">Price: ₦150,000</span>
+              <span class="training-detail">Schedule: Mondays and Wednesdays, 7-9 PM</span>
             </div>
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
 
-            <div class="training-program">
-                <h2>Advanced Stocktaking Techniques</h2>
-                <p>Improve inventory accuracy and management.</p>
-                <p><strong>Duration:</strong> 2 weeks</p>
-                <p><strong>Price:</strong> ₦80,000</p>
-                <p><strong>Schedule:</strong> Saturdays, 9 AM - 1 PM</p>
+          <div id="Store-Development" class="training-program">
+            <h2>Store Development and Design</h2>
+            <p>Master the principles of effective store layout and design.</p>
+            <div class="training-details">
+              <span class="training-detail">Duration: 5 weeks</span>
+              <span class="training-detail">Price: ₦180,000</span>
+              <span class="training-detail">Schedule: Tuesdays and Thursdays, 6-8 PM</span>
             </div>
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
 
-            <div class="training-program">
-                <h2>Project Management Fundamentals</h2>
-                <p>Learn to plan, execute, and close projects successfully.</p>
-                <p><strong>Duration:</strong> 6 weeks</p>
-                <p><strong>Price:</strong> ₦200,000</p>
-                <p><strong>Schedule:</strong> Mondays and Wednesdays, 6-8 PM</p>
+          <div id="Advanced-Stocktaking " class="training-program">
+            <h2>Advanced Stocktaking </h2>
+            <p>Improve inventory accuracy and management.</p>
+            <div class="training-details">
+              <span class="training-detail">Duration: 2 weeks</span>
+              <span class="training-detail">Price: ₦80,000</span>
+              <span class="training-detail">Schedule: Saturdays, 9 AM - 1 PM</span>
             </div>
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
 
-            <div class="training-program">
-                <h2>Web Development Bootcamp</h2>
-                <p>Build modern, responsive websites from scratch.</p>
-                <p><strong>Duration:</strong> 10 weeks</p>
-                <p><strong>Price:</strong> ₦300,000</p>
-                <p><strong>Schedule:</strong> Tuesdays and Thursdays, 6-9 PM</p>
+          <div id="Project-Management" class="training-program">
+            <h2>Project Management</h2>
+            <p>Learn to plan, execute, and close projects successfully.</p>
+            <div class="training-details">
+              <span class="training-detail">Duration: 6 weeks</span>
+              <span class="training-detail">Price: ₦200,000</span>
+              <span class="training-detail">Schedule: Mondays and Wednesdays, 6-8 PM</span>
             </div>
-        </section>
-    </main>
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+
+          <div id="Web-Development" class="training-program">
+            <h2>Web Development Bootcamp</h2>
+            <p>Build modern, responsive websites from scratch.</p>
+            <div class="training-details">
+              <span class="training-detail">Duration: 10 weeks</span>
+              <span class="training-detail">Price: ₦300,000</span>
+              <span class="training-detail">Schedule: Tuesdays and Thursdays, 6-9 PM</span>
+            </div>
+            <button class="enroll-btn">Enroll Now</button>
+          </div>
+
+          
+        
+
+        <!-- Add more training programs here -->
+        <!-- You can copy and paste your existing program details into this structure -->
+
+      </div>
+    </section>
+    </div>                     
+
+</main>
 
     <footer>
         <div class="footer-content">
@@ -202,5 +248,7 @@
     <!-- <script src="../javascript_files/active.js"></script> -->
 
     <script src="/javascript_files/script.js"></script>
+
+    <script src="../javascript_files/training.js"></script>
 </body>
 </html>
