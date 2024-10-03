@@ -1,0 +1,38 @@
+.faq-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 1rem;
+  }
+  
+  .faq-question {
+    cursor: pointer;
+    padding: 1rem 0;
+    margin: 0;
+    position: relative;
+  }
+  
+  .faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .faq-question.active::after {
+    content: '-';
+  }
+  
+  .faq-answer {
+    display: none;
+    padding: 1rem 0;
+  }
+  
+  .faq-answer.active {
+    display: block;
+  }

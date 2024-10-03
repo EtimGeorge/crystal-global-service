@@ -1,0 +1,29 @@
+.testimonial-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  .testimonial-slider {
+    overflow: hidden;
+  }
+  
+  .testimonial-slide {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .slider-prev, .slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .slider-prev { left: 0; }
+  .slider-next { right: 0; }
