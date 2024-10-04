@@ -168,12 +168,14 @@
 /* Mission and Vision Section */
 .mission-vision {
     background-color: #f8f9fa;
-    padding: 5rem 0;
+    padding: 1rem 0;
 }
 
 .mission-vision .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    
     
 }
 
@@ -194,7 +196,7 @@
 
 /* Values Section */
 .values {
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
 
 .values-grid {
@@ -228,7 +230,7 @@
 /* Team Section */
 .team {
     background-color: #f8f9fa;
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
 
 .team-intro {
@@ -410,10 +412,11 @@
   }
   
   .community p{
-    width: 40rem ;
-    margin: 0 auto;
+    
+    text-align: center;
     font-size: 18px;
-    color:var(--) ;
+    line-height: 1.5;
+    margin: 0 auto;
     display: flex;
     font-weight: 600;
     
