@@ -7,19 +7,44 @@
     --background-color: #f4f4f4;
   }
 
-  .search-container{
+  .banner{
+    background-image: url(../assets/team_and_trainin_5.jpeg);
+    background-size: cover;
+    background-position: center;
+     height: 400px;
+  }
+
+  .banner h1{
+    color: var(--accent-color);
+  }
+
+  .search-bar{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: baseline;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 1rem;
-   
+    transition: background-color 0.3s ease;
+    background-color: var(--background-color);
+    transition: background-color 0.3s ease;
+  }
+
+  .search-container{    
     color: white;
     border-radius: 4px;
     transition: background-color 0.3s ease;
   }
 
- 
-  
+  .search-bar i{
+    
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  z-index: 2;
+  }
+
   input {
     padding: 0.5rem;
     border: 1px solid var(--text-color);
@@ -28,16 +53,16 @@
     margin-bottom: 1rem;
     font-size: 17px;
   }
-/*   
-  .search-button {
-    padding: 0.5rem 1rem;
+  
+  .search-icon {
+    
+    padding: 0.28rem ;
     border: none;
     background-color: var(--accent-color);
-    color: white;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  } */
+  }
   
   .training-content {
     max-width: 1200px;
@@ -51,13 +76,6 @@
   }
   
   .training-program {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    color: white;
-    
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
