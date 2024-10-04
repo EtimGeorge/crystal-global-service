@@ -1,11 +1,14 @@
 /* ISO Training Styles */
 
 :root {
-    --primary-color: #0056b3;
-    --secondary-color: #003366;
-    --accent-color: #B71C1C;
+    --primary-color: #52E3F5;
+    --secondary-color: #2FE7C4;
+    --accent-color: #AD194A;
     --text-color: #333;
-}
+    --background-color: #f4f4f4;
+    --header-color:#52e2f596;
+    --nav-hover-color: #FF6B6B;
+  }
 
 body {
     font-family: Arial, sans-serif;
@@ -15,7 +18,7 @@ body {
     color: var(--text-color);
 }
 
-/* Header Styles */
+/* Header Styles
 header {
     background-color: var(--primary-color);
     color: white;
@@ -39,7 +42,9 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-}
+} */
+
+
 
 /* Banner Styles */
 .banner {

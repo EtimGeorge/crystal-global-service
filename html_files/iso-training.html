@@ -45,8 +45,12 @@
     <title>ISO Management Systems Training - Saencrystal Global Services</title>
 
     <!-- ======= style sheet ========= -->
+    
 
     <link rel="stylesheet" href="../css_files/iso-training.css">
+
+    <link rel="stylesheet" href="../css_files/styles.css">
+
     
     <!-- ======= favicon ========= -->
 
@@ -59,25 +63,27 @@
 
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="../assets/images/SAENCRYSTAL_GLOBAL__1_-removebg-preview.png" alt="Saencrystal Global Services Logo">
-        </div>
+     <!-- Header -->
+
+     <header>
         <nav>
-            <ul>
-                <li><a href="../index.html" class="nav-item">Home</a></li>
+            <div class="logo">
+                <img src="../assets/images/SAENCRYSTAL_GLOBAL__1_-removebg-preview.png" alt="Saencrystal Global Services Logo">
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="../index.html" class="nav-item">Home</a></li>
                 <li><a href="./about.html" class="nav-item">About</a></li>
                 <li><a href="./services.html" class="nav-item">Services</a></li>
                 <li><a href="./training.html" class="nav-item">Training</a></li>
                 <li><a href="./contact.html" class="nav-item">Contact</a></li>
                 <li><a href="./blog.html" class="nav-item">Blog</a></li>
             </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
-        <div class="hamburger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
     </header>
 
     <main role="main">
@@ -155,24 +161,18 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="./training.html">Training</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./html_files/about.html">About</a></li>
+                    <li><a href="./html_files/services.html">Services</a></li>
+                    <li><a href="./html_files/training.html">Training</a></li>
+                    <li><a href="./html_files/contact.html">Contact</a></li>
                 </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Newsletter</h3>
-                <form>
-                    <input type="email" placeholder="Enter your email">
-                    <button type="submit">Subscribe</button>
-                </form>
             </div>
             <div class="footer-section">
                 <h3>Follow Us</h3>
@@ -185,7 +185,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            © 2024 Saencrystal Global Services. All rights reserved.
+            <p>&copy; 2024 Saencrystal Global Services. All rights reserved.</p>
         </div>
     </footer>
 
@@ -198,5 +198,7 @@
     </div>
 
     <script src="../javascript_files/iso-training.js"></script>
+
+    <script src="../javascript_files/script.js"></script>
 </body>
 </html>

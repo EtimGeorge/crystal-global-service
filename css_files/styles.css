@@ -288,7 +288,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/assets/team_and_trainin_7.jpeg);
+  background-image: url(../assets/team_and_trainin_7.jpeg);
   background-size: cover;
   background-position: center;
   opacity: 0.4; /* Adjust this value to control the opacity */
@@ -553,7 +553,7 @@ footer::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/assets/images/orsrc31263.jpg);
+  background-image: url(../assets/images/orsrc31263.jpg);
   background-size: cover;
   background-position: center;
   opacity: 0.4; /* Adjust this value to control the opacity */

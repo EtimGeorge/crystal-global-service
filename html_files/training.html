@@ -52,7 +52,11 @@
 
     <link rel="stylesheet" href="../css_files/training-testimonial.css">
 
+    <link rel="stylesheet" href="../css_files/trainig-faq.css">
+
     <link rel="stylesheet" href="../css_files/back-to-top-btn.css">
+
+    <link rel="stylesheet" href="../css_files/training-enrollment.css">
 
     <!-- =======favicon=========== -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -114,16 +118,7 @@
             <span class="training-detail">Price: ₦150,000</span>
             <span class="training-detail">Schedule: Mondays and Wednesdays, 6-8 PM</span>
           </div>
-          <button class="enroll-btn">Enroll Now</button>
-
-          <!-- <div class="program-progress">
-            <h3>Program Progress</h3>
-            <div class="progress-bar">
-              <div class="progress-fill" style="width: 0%;"></div>
-            </div>
-            <span class="progress-text">0% Complete</span>
-          </div> -->
-                  
+          <button class="enroll-btn">Enroll Now</button>  
         </div>
 
         <div id="digital-marketing" class="training-program">
@@ -212,30 +207,44 @@
               <span class="training-detail">Schedule: Tuesdays and Thursdays, 6-9 PM</span>
             </div>
             <button class="enroll-btn">Enroll Now</button>
-             <!-- ======= program prgress bar======= work on this section and fix -->
 
-<div class="program-progress">
-    <h3>Program Progress</h3>
-    <div class="progress-bar">
-      <div class="progress-fill" style="width: 0%;"></div>
-    </div>
-    <span class="progress-text">0% Complete</span>
-  </div>
           </div>
 
-          
         
-
         <!-- Add more training programs here -->
         <!-- You can copy and paste your existing program details into this structure -->
 
       </div>
     </section>
-    </div>                     
-
+    </div> 
+                    
 </main>
- 
 
+<!-- ======== enrollment form ============= -->
+<div id="enrollment-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Enroll in <span id="program-title"></span></h2>
+      <form id="enrollment-form" action="/enroll" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <input type="hidden" id="program" name="program">
+        <button type="submit">Submit Enrollment</button>
+      </form>
+    </div>
+  </div>
+
+ 
     <!-- ======testimonial slider========== -->
 <section id="testimonials" class="testimonial-section">
 <h2>What Our Students Say</h2>
@@ -268,6 +277,16 @@
 
   <button id="back-to-top" class="back-to-top-btn" title="Back to Top">↑</button>
 
+    <!-- Community Section -->
+    <section class="community">
+        <h3>Newsletter</h3>
+        <p>Subscribe to our newsletter for exclusive updates and special offers.</p>
+        <form id="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -280,13 +299,7 @@
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3>Newsletter</h3>
-                <form id="newsletter-form">
-                    <input type="email" placeholder="Your email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
+           
             <div class="footer-section">
                 <h3>Follow Us</h3>
                 <div class="social-links">
@@ -302,6 +315,11 @@
         </div>
     </footer>
 
+    
+      
+      <!-- Add this somewhere in your HTML, hidden from view -->
+      <img id="company-logo" src="../assets/images/SAENCRYSTAL_GLOBAL__1_-removebg-preview.png" alt="Company Logo" style="display: none;">
+
     <!-- <script src="../javascript_files/active.js"></script> -->
 
     <script src="../javascript_files/script.js"></script>
@@ -312,6 +330,10 @@
 
     <script src="../javascript_files/back-to-top.js"></script>
 
+    <script src="../javascript_files/Training Enrollment JavaScript.js"></script>
+
     <script src="../javascript_files/training-testimonial-slider.js"></script>
+
+    
 </body>
 </html>
