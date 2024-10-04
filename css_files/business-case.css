@@ -16,7 +16,7 @@ body {
 }
 
 .banner {
-    background-image: url(path/to/business-case-banner.jpg);
+    background-image: url(../assets/Our_Team_in_Action_7.jpeg);
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -31,11 +31,14 @@ body {
 .banner h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
+    color:var(--accent-color);
 }
 
 .banner p {
     font-size: 1.6rem;
     max-width: 800px;
+    color:var(--accent-color);
+    background-color: #948f8f9d;
 }
 
 .services-section, .benefits-section, .why-choose-us, .portfolio-section {
@@ -127,7 +130,7 @@ h2 {
 }
 
 .cta-section {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
     text-align: center;
     padding: 4rem 2rem;
 }
@@ -135,6 +138,10 @@ h2 {
 .cta-button {
     font-size: 1.2rem;
     padding: 1rem 2rem;
+}
+
+.cta-button:hover{
+    background-color: var(--secondary-color);
 }
 
 @media (max-width: 768px) {
